@@ -1,0 +1,8 @@
+### What's happening here?
+
+We've created three functions, each handling a specific operation
+These are just regular Python functions—no FastAPI decorators yet!
+Each function returns data (in this case, dictionaries)
+The functions accept parameters that will come from the API requests
+
+Step 2: Update main.py to Use api.py

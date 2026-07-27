@@ -1,0 +1,11 @@
+The Concept of Separation of Concerns
+This organization follows a principle called "separation of concerns”, where each file should handle one type of responsibility:
+
+Data definitions go in schemas.py
+API logic goes in api.py
+Database operations go in database.py
+Coordination happens in main.py
+
+When you need to change how data is structured,
+ you know exactly where to look: schemas.py. When you need to add a new endpoint,
+you go to api.py.This makes development much faster and less confusing.

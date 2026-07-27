@@ -296,3 +296,17 @@ No parsing complicated HTML required
 * You (the customer) are like a user or an app.
 * The kitchen is like the server or system where the   real work happens.
 * The waiter (API) takes your request, delivers it to the kitchen, and brings back what you asked for.
+
+# code to open web in terminal
+
+uvicorn main:app --reload --host 127.0.0.1 --port 80
+
+Common File Structure in FastAPI Projects
+As your FastAPI project grows, you might organize it like this:
+
+fastapi_training/
+    ├── main.py           # Entry point - brings everything together
+    ├── api.py            # API route handlers (endpoints)
+    ├── schemas.py        # Data models (Pydantic schemas)
+    ├── database.py       # Database connection and setup
+    └── venv/             # Virtual environment

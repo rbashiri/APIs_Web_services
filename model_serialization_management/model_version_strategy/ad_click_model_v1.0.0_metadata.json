@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "date": "2025-01-15",
+  "dataset": "ad_clicks_jan.csv",
+  "samples": 5000,
+  "accuracy": 0.78,
+  "description": "Initial model with basic features: age, location, device type"
+}

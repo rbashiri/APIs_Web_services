@@ -1,0 +1,26 @@
+Saving Machine Learning Models — Practical Summary
+After training and evaluating a machine learning model, 
+we save it to a file so we can use it again without retraining.
+ The saved file keeps the patterns and parameters the model learned.
+
+ Train model → Evaluate model → Save model → Load model later → Predict new data
+ 
+How to Save Models in Scikit-Learn
+Saving Models in Scikit-Learn
+Scikit-learn models can be saved using pickle or joblib. 
+Both preserve the trained model, 
+but joblib is generally preferred:
+because it handles large NumPy arrays more efficiently.
+
+Important points:
+
+joblib.dump() saves the trained model to a file.
+joblib.load() loads the model into memory.
+You do not need to call .fit() again after loading.
+New data must use the same features, order, and units as the training data.
+If you used preprocessing, save the complete pipeline.
+Use compatible scikit-learn versions when saving and loading.
+Only load model files from trusted sources.
+
+Trained model → Save → Load later → Predict new data
+
